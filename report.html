@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="report-container">
+        <div class="navbar">
+            <h2 onclick="window.location.href='index.html'">Watch<span>Dogs</span></h2>
+            <ul class="nav-links">
+                <div class="nav-links" id="category-links">
+                    
+                </div>
+                <div class="dropdown" style="display: none;">
+                    <li class="nav-link"><i class="fa-solid fa-globe"></i><a class="drop-link">Location</a></li>
+                    <ul class="dropdown-content">
+                        
+                    </ul>   
+                </div>
+               
+            </ul>
+            <div class="nav-report">
+                <h3>File Report</h3>
+            </div>
+        </div>
+        <header>
+            <h3>File your Reports with the from below</h3>
+            <p>Fill in authentic information of incidents form the location to the detailed description</p>
+        </header>
+    
+        <main>
+            <form id="destination_details_form">
+    
+                <label for="category">Category of Incident</label>
+                <input required type="text" id="category" placeholder="Enter the category of the incident">
+    
+                <label for="location">Location</label>
+                <input required type="text" id="location" placeholder="Where is it located?">
+    
+                <label for="photo">Photo</label>
+                <input type="url" id="photo" placeholder="Enter an image url of the incident">
+    
+                <label for="description">Description</label>
+                <textarea type="text" id="description" placeholder="Brief explanation of the incident"></textarea>
+    
+                <button type="submit" class="form-btn">Add to list</button>
+            </form>
+    
+            <div class="news-container">
+                
+                <div class="report-cat" id="destinations_container">
+                    <h2>Report Catalogues</h2>
+                </div>
+    
+            </div>
+        </main>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
